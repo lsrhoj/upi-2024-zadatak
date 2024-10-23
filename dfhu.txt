@@ -1,0 +1,71 @@
+student@2-74-09 MINGW64 ~/Desktop/upi_vj/upi-2024-zadatak (main)
+$ git clone https://github.com/lsrhoj/upi-2024-zadatak.git
+Cloning into 'upi-2024-zadatak'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Receiving objects: 100% (3/3), done.
+
+student@2-74-09 MINGW64 ~/Desktop/upi_vj/upi-2024-zadatak (main)
+$ ls
+Datoteka-vj02.txt  upi-2024-zadatak/
+
+student@2-74-09 MINGW64 ~/Desktop/upi_vj/upi-2024-zadatak (main)
+$ cd upi-2024-zadatak/
+
+student@2-74-09 MINGW64 ~/Desktop/upi_vj/upi-2024-zadatak/upi-2024-zadatak (main)
+$ ls
+Datoteka-vj02.txt
+
+student@2-74-09 MINGW64 ~/Desktop/upi_vj/upi-2024-zadatak/upi-2024-zadatak (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   Datoteka-vj02.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+student@2-74-09 MINGW64 ~/Desktop/upi_vj/upi-2024-zadatak/upi-2024-zadatak (main)
+$ git add .
+
+student@2-74-09 MINGW64 ~/Desktop/upi_vj/upi-2024-zadatak/upi-2024-zadatak (main)
+$ git commit -m "aaaaa"
+[main 5a9d6d9] aaaaa
+ 1 file changed, 1 insertion(+)
+
+student@2-74-09 MINGW64 ~/Desktop/upi_vj/upi-2024-zadatak/upi-2024-zadatak (main)
+$ git push origin main
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Writing objects: 100% (3/3), 252 bytes | 252.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: error: GH006: Protected branch update failed for refs/heads/main.
+remote:
+remote: - Changes must be made through a pull request.
+To https://github.com/lsrhoj/upi-2024-zadatak.git
+ ! [remote rejected] main -> main (protected branch hook declined)
+error: failed to push some refs to 'https://github.com/lsrhoj/upi-2024-zadatak.git'
+
+student@2-74-09 MINGW64 ~/Desktop/upi_vj/upi-2024-zadatak/upi-2024-zadatak (main)
+$ git checkout -b "grana"
+Switched to a new branch 'grana'
+
+student@2-74-09 MINGW64 ~/Desktop/upi_vj/upi-2024-zadatak/upi-2024-zadatak (grana)
+$ git push origin grana
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Writing objects: 100% (3/3), 252 bytes | 252.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote:
+remote: Create a pull request for 'grana' on GitHub by visiting:
+remote:      https://github.com/lsrhoj/upi-2024-zadatak/pull/new/grana
+remote:
+To https://github.com/lsrhoj/upi-2024-zadatak.git
+ * [new branch]      grana -> grana
+
+student@2-74-09 MINGW64 ~/Desktop/upi_vj/upi-2024-zadatak/upi-2024-zadatak (grana)
+$
